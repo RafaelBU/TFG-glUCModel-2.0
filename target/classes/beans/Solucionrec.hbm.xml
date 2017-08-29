@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14-may-2017 1:22:02 by Hibernate Tools 5.2.1.Final -->
+<hibernate-mapping>
+    <class name="beans.Solucionrec" table="solucionrec" catalog="glucmodel" optimistic-lock="version">
+        <id name="idSol" type="java.lang.Integer">
+            <column name="idSol" />
+            <generator class="identity" />
+        </id>
+        <property name="texto" type="string">
+            <column name="texto" length="65535" not-null="true" />
+        </property>
+        <property name="idDocu" type="int">
+            <column name="idDocu" not-null="true" />
+        </property>
+        <property name="categoria" type="string">
+            <column name="categoria" length="50" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

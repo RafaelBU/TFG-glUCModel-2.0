@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14-may-2017 1:22:02 by Hibernate Tools 5.2.1.Final -->
+<hibernate-mapping>
+    <class name="beans.Ejercicios" table="ejercicios" catalog="glucmodel" optimistic-lock="version">
+        <id name="clave" type="java.lang.Long">
+            <column name="CLAVE" />
+            <generator class="identity" />
+        </id>
+        <property name="date" type="timestamp">
+            <column name="DATE" length="19" />
+        </property>
+        <property name="iduser" type="java.lang.Long">
+            <column name="IDUSER" />
+        </property>
+        <property name="level" type="java.lang.Integer">
+            <column name="LEVEL" />
+        </property>
+        <property name="type" type="java.lang.Integer">
+            <column name="TYPE" />
+        </property>
+        <property name="minutes" type="int">
+            <column name="MINUTES" not-null="true" />
+        </property>
+        <property name="observations" type="string">
+            <column name="OBSERVATIONS" length="65535" />
+        </property>
+    </class>
+</hibernate-mapping>

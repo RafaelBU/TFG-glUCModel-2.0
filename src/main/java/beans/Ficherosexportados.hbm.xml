@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14-may-2017 1:22:02 by Hibernate Tools 5.2.1.Final -->
+<hibernate-mapping>
+    <class name="beans.Ficherosexportados" table="ficherosexportados" catalog="glucmodel" optimistic-lock="version">
+        <id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="fecha" type="timestamp">
+            <column name="FECHA" length="19" />
+        </property>
+        <property name="filepath" type="string">
+            <column name="FILEPATH" />
+        </property>
+        <property name="iduser" type="java.lang.Long">
+            <column name="IDUSER" />
+        </property>
+    </class>
+</hibernate-mapping>

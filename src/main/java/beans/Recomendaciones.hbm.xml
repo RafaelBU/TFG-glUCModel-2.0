@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14-may-2017 1:22:02 by Hibernate Tools 5.2.1.Final -->
+<hibernate-mapping>
+    <class name="beans.Recomendaciones" table="recomendaciones" catalog="glucmodel" optimistic-lock="version">
+        <composite-id name="id" class="beans.RecomendacionesId">
+            <key-property name="idRec" type="int">
+                <column name="idRec" />
+            </key-property>
+            <key-property name="idSol" type="int">
+                <column name="idSol" />
+            </key-property>
+        </composite-id>
+        <property name="idPac" type="int">
+            <column name="idPac" not-null="true" />
+        </property>
+        <property name="idDes" type="int">
+            <column name="idDes" not-null="true" />
+        </property>
+        <property name="idActi" type="int">
+            <column name="idActi"/>
+        </property>
+        <property name="fecha" type="date">
+            <column name="Fecha" length="10" not-null="true" />
+        </property>
+        <property name="enviada" type="boolean">
+            <column name="Enviada" not-null="true" />
+        </property>
+        <property name="leida" type="boolean">
+            <column name="Leida" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

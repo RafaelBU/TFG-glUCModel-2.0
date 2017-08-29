@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory>
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/glucmodel</property>
+  <property name="hibernate.connection.username">root</property>
+  <property name="hibernate.connection.password"></property>
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+  <property name="hibernate.current_session_context_class">thread</property>
+  <property name="hibernate.show_sql">true</property>
+  <property name="hibernate.query.factory_class">org.hibernate.hql.classic.ClassicQueryTranslatorFactory</property>
+  <mapping resource="beans/Actividadesrec.hbm.xml"/>
+  <mapping resource="beans/Descripcionrec.hbm.xml"/>
+  <mapping resource="beans/DestinoDoc.hbm.xml"/>
+  <mapping resource="beans/Dietas.hbm.xml"/>
+  <mapping resource="beans/Documentaciones.hbm.xml"/>
+  <mapping resource="beans/Documentos.hbm.xml"/>
+  <mapping resource="beans/Ejercicios.hbm.xml"/>
+  <mapping resource="beans/Ficherosexportados.hbm.xml"/>
+  <mapping resource="beans/Glucemias.hbm.xml"/>
+  <mapping resource="beans/Insulinas.hbm.xml"/>
+  <mapping resource="beans/Mediciones.hbm.xml"/>
+  <mapping resource="beans/MensajesUsuario.hbm.xml"/>
+  <mapping resource="beans/Momentos.hbm.xml"/>
+  <mapping resource="beans/NivelEje.hbm.xml"/>
+  <mapping resource="beans/Pesos.hbm.xml"/>
+  <mapping resource="beans/Pruebas.hbm.xml"/>
+  <mapping resource="beans/Recomendaciones.hbm.xml"/>
+  <mapping resource="beans/Sequence.hbm.xml"/>
+  <mapping resource="beans/Solucionrec.hbm.xml"/>
+  <mapping resource="beans/TipoEje.hbm.xml"/>
+  <mapping resource="beans/TipoIns.hbm.xml"/>
+  <mapping resource="beans/TipoPru.hbm.xml"/>
+  <mapping resource="beans/Usuarios.hbm.xml"/>
+ </session-factory>
+</hibernate-configuration>

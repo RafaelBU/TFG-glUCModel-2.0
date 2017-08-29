@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14-may-2017 1:22:02 by Hibernate Tools 5.2.1.Final -->
+<hibernate-mapping>
+    <class name="beans.Glucemias" table="glucemias" catalog="glucmodel" optimistic-lock="version">
+        <id name="clave" type="java.lang.Long">
+            <column name="CLAVE" />
+            <generator class="identity" />
+        </id>
+        <property name="date" type="timestamp">
+            <column name="DATE" length="19" />
+        </property>
+        <property name="iduser" type="java.lang.Long">
+            <column name="IDUSER" />
+        </property>
+        <property name="moment" type="java.lang.Integer">
+            <column name="MOMENT" />
+        </property>
+        <property name="observations" type="string">
+            <column name="OBSERVATIONS" />
+        </property>
+        <property name="value" type="java.lang.Double">
+            <column name="VALUE" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

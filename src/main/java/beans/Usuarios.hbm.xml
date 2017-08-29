@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14-may-2017 1:22:02 by Hibernate Tools 5.2.1.Final -->
+<hibernate-mapping>
+    <class name="beans.Usuarios" table="usuarios" catalog="glucmodel" optimistic-lock="version">
+        <id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="address" type="string">
+            <column name="ADDRESS" />
+        </property>
+        <property name="altacurso" type="java.lang.Byte">
+            <column name="ALTACURSO" />
+        </property>
+        <property name="city" type="string">
+            <column name="CITY" />
+        </property>
+        <property name="date" type="timestamp">
+            <column name="DATE" length="19" />
+        </property>
+        <property name="dni" type="string">
+            <column name="DNI" />
+        </property>
+        <property name="email" type="string">
+            <column name="EMAIL" />
+        </property>
+        <property name="examen" type="java.lang.Long">
+            <column name="EXAMEN" />
+        </property>
+        <property name="fechaevaluacion" type="timestamp">
+            <column name="FECHAEVALUACION" length="19" />
+        </property>
+        <property name="firmacontrato" type="java.lang.Boolean">
+            <column name="FIRMACONTRATO" />
+        </property>
+        <property name="height" type="java.lang.Double">
+            <column name="HEIGHT" precision="22" scale="0" />
+        </property>
+        <property name="iddoctor" type="java.lang.Long">
+            <column name="IDDOCTOR" />
+        </property>
+        <property name="ip" type="string">
+            <column name="IP" />
+        </property>
+        <property name="login" type="java.lang.Long">
+            <column name="LOGIN" />
+        </property>
+        <property name="moodleid" type="java.lang.Integer">
+            <column name="MOODLEID" />
+        </property>
+        <property name="name" type="string">
+            <column name="NAME" />
+        </property>
+        <property name="nivel" type="java.lang.Integer">
+            <column name="NIVEL" />
+        </property>
+        <property name="password" type="string">
+            <column name="PASSWORD" />
+        </property>
+        <property name="phone" type="string">
+            <column name="PHONE" />
+        </property>
+        <property name="phone2" type="string">
+            <column name="PHONE2" />
+        </property>
+        <property name="rolcurso" type="java.lang.Integer">
+            <column name="ROLCURSO" />
+        </property>
+        <property name="sex" type="string">
+            <column name="SEX" />
+        </property>
+        <property name="surname1" type="string">
+            <column name="SURNAME1" />
+        </property>
+        <property name="surname2" type="string">
+            <column name="SURNAME2" />
+        </property>
+        <property name="fechaconsen" type="timestamp">
+            <column name="FECHACONSEN" length="19" />
+        </property>
+        <property name="hipergluc" type="java.lang.Integer">
+            <column name="HIPERGLUC" />
+        </property>
+        <property name="hipogluc" type="java.lang.Integer">
+            <column name="HIPOGLUC" />
+        </property>
+        <property name="colegiado" type="string">
+            <column name="COLEGIADO" length="30" />
+        </property>
+    </class>
+</hibernate-mapping>

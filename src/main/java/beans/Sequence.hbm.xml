@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14-may-2017 1:22:02 by Hibernate Tools 5.2.1.Final -->
+<hibernate-mapping>
+    <class name="beans.Sequence" table="sequence" catalog="glucmodel" optimistic-lock="version">
+        <id name="seqName" type="string">
+            <column name="SEQ_NAME" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="seqCount" type="big_decimal">
+            <column name="SEQ_COUNT" precision="38" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

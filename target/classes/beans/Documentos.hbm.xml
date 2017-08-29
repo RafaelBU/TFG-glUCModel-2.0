@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14-may-2017 1:22:02 by Hibernate Tools 5.2.1.Final -->
+<hibernate-mapping>
+    <class name="beans.Documentos" table="documentos" catalog="glucmodel" optimistic-lock="version">
+        <id name="idDocu" type="java.lang.Integer">
+            <column name="idDocu" />
+            <generator class="identity" />
+        </id>
+        <property name="path" type="string">
+            <column name="Path" length="50" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

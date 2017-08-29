@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14-may-2017 1:22:02 by Hibernate Tools 5.2.1.Final -->
+<hibernate-mapping>
+    <class name="beans.Momentos" table="momentos" catalog="glucmodel" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="description" type="string">
+            <column name="DESCRIPTION" length="45" not-null="true" />
+        </property>
+        <property name="hourfrom" type="java.lang.Short">
+            <column name="HOURFROM" />
+        </property>
+        <property name="hourto" type="java.lang.Short">
+            <column name="HOURTO" />
+        </property>
+    </class>
+</hibernate-mapping>

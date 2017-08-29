@@ -1,0 +1,421 @@
+
+li .menu-medico{
+	background-color : #009688;
+}
+
+.fondoDefault,.pacientes{
+	background-color : #e0f2f1;
+	
+}
+
+#navHeader {
+	background-color : #009688;
+}
+
+#boton-volver{
+	background-color: #26a69a !important;
+}
+
+.btn.btn-flat{
+	background : #26a69a;
+	color : white !important;
+}
+
+
+.main.main-raised .container{
+	margin-top : -300px;
+	
+}
+
+.nav-pills.nav-pills-info > li.active > a, .nav-pills.nav-pills-info > li.active > a:focus, .nav-pills.nav-pills-info > li.active > a:hover{
+	background-color : #26a69a;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    border-top-color: #009688 !important;
+}
+
+.navbar .navbar-nav > li > a:not(.btn) .material-icons {
+    margin-right: 15px;
+}
+
+
+#colum-reco-index{
+	/*float: left;*/
+	float : right;
+}
+#formulario-recomendaciones{
+	float : left;
+	width : 45%;
+}
+
+.panel-heading h4{
+	background : #26a69a;
+	line-height: 16px; 
+	margin: 0 0 0.4em; 
+	padding: 10px;
+	color : white;
+	font-weight: bold;
+}
+
+.form-group.is-focused .form-control {
+ 
+  background-image: linear-gradient(#26a69a, #26a69a), linear-gradient(#D2D2D2, #D2D2D2) !important;
+}
+
+.form-group.is-focused label,
+.form-group.is-focused label.control-label {
+  color: #26a69a !important; 
+}
+
+.checkbox input[type="checkbox"]:checked + .checkbox-material .check {
+    background: #26a69a ;
+}
+
+#btn-anadir-sol{
+	background: #26a69a;
+	height: 50px;
+	width: 50px;
+}
+
+select[multiple], select[size] {
+	height: 10em !important;
+    width: 100%;
+}
+
+#guardar-reco, #anadir-documento{
+	background-color: #26a69a;
+}
+
+#colum-reco-index, #colum-reco-historial { 
+	width: 40%;
+	height: 89.7em;
+	padding: 1%;
+	margin-bottom: 40px;
+		
+}
+
+#colum-reco-auto-paciente, #colum-reco-manual, #colum-reco-historial-paciente{
+	float: left; 
+	width: 30%; 
+	height: 40em;
+	padding: 1%;
+	margin-bottom: 40px;
+	margin-right : 30px;
+}
+
+#colum-reco-manual div[class="contenedor-tarjetas"]{
+	height : 30em;
+}
+
+#colum-reco-auto-paciente div[class="contenedor-tarjetas"], #colum-reco-historial-paciente div[class="contenedor-tarjetas"]{
+	height: 35em;
+}
+
+.contenedor-tarjetas{
+	background-color : #e0f2f1;
+	padding: 1%; 
+	overflow : auto;
+}
+
+#colum-reco-index div[class="contenedor-tarjetas"]{
+	height: 85em;
+}
+
+	
+#colum-reco-index h4, #colum-reco-historial h4, #colum-reco-auto-paciente h4, #colum-reco-manual h4, #colum-reco-historial-paciente h4 { 
+	background : #26a69a;
+	line-height: 16px; 
+	margin: 0 0 0.4em; 
+	padding: 10px;
+	color : white;
+	
+}
+
+#colum-reco-auto .gallery h5 { display: none; }
+
+#colum-reco-historial h4 { 
+	line-height: 16px; 
+	margin: 0 0 0.4em; 
+	padding: 10px;
+}
+
+/* Landscape phones and portrait tablets */
+@media screen and (max-width: 767px) {
+	#colum-reco-index, #colum-reco-historial, #colum-reco-auto-paciente, #colum-reco-manual, #colum-reco-historial-paciente{
+		width: 100%; 
+		min-height: 10em; 
+		max-height : 20em;
+		padding: 1%; 
+		overflow : scroll;
+	}
+	
+	.panel.panel-default{
+		width: 220%;
+	}
+	
+	#guardar-reco, #anadir-documento{
+		margin-left : 4em;
+	}
+	
+	#buscador-pacientes{
+		width : 100%;
+	}
+	
+}
+
+
+.add-reco{
+	background: #26a69a !important;
+	color : white;
+}
+
+.btn.btn-success.btn-fab.btn-fab-mini.btn-round{
+	background: #26a69a;
+	height: 50px;
+	width: 50px;
+}
+
+#modal-add-reco{
+	float: right;
+}
+
+.material-icons{
+	font-size: 36px !important;
+	margin-left: -6px ;
+}
+
+#gallery { float: left; width: 65%; min-height: 12em; }
+
+  .gallery.custom-state-active { 
+  background: #eee; 
+  }
+  
+  .gallery li { 
+	float: left; 
+	/*width: 44%;*/ 
+	padding: 0.4em; 
+	margin: 0 0.4em 0.4em 0; 
+	text-align: center; 
+	max-height: 15em;
+	overflow: auto;
+	}
+	
+
+.ui-draggable .ui-dialog-titlebar {
+    background-color: #009688;
+    color: white;
+	text-align: center;
+}
+
+.titulo-explicacion, .titulo-actividad , .titulo-paciente{
+	font-weight : bold;
+}
+
+.modal-header{
+	background-color: #009688;	
+}
+
+.modal-title{
+	color: white;
+	text-align: center;
+	margin-bottom: 1em !important;
+}
+
+.modal-content{
+	background-color: #e0f2f1 !important;
+}
+
+
+.boton-modal, .boton-cerrar, .boton-enviar-index{
+	background-color: #26a69a !important;
+}
+
+.descripcion-mini{
+	float: left;
+	font-size: smaller;
+	width: 40%;
+}
+
+.actividad-mini{
+	float: right;
+	font-size: smaller;
+	width: 50%;
+}
+
+
+.pacientes{
+	padding-top: 20px;
+	padding-bottom: 18px;
+}
+
+
+.btn-simple{
+	color: #26a69a !important;
+	border-color : #26a69a !important;
+	font-weight: bold !important;
+	font-size: 1.2em !important;	
+	white-space: normal !important;
+}
+
+.boton-reco-paciente, .infoPaciente{
+    margin-top: 1.2em !important;
+}
+
+.infoPaciente{
+	color: #26a69a;
+}
+
+.boton-reco-paciente {
+	background-color: #26a69a !important;
+	margin-top: -1px;
+}
+
+#boton-alta-paciente{
+	background-color: #26a69a;
+}
+
+
+input[type=text]{
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#buscador-pacientes {
+	padding: 12px 20px 12px 40px;
+}
+
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, 
+.pagination > .active > span:focus, .pagination > .active > span:hover{
+	background-color: #26a69a !important;
+}
+
+textarea {
+  max-width: 100%;
+}
+ 
+ 
+img.listaPaciente {
+    width: 55px;
+    height: 55px;
+    margin-left: 50px;
+    margin-top: -10px;
+}
+
+img.perfilPaciente {
+    width: 13em;
+    height: 13em;
+    margin : auto;
+}
+
+.infoPaciente{
+	font-size : 1.3em;
+}
+
+.perfil-pacientes{
+	margin-top : -100px;
+	background-color: #e0f2f1;
+}
+
+.perfil-medico{
+	background-color: #e0f2f1;
+}
+
+#nombre-perfil, .recomendador-vacio{
+	color : #26a69a;
+	font-weight: bold;
+	font-size: 1.6em;
+}
+
+.recomendador-vacio{
+	color : #26a69a;
+	font-weight: bold;
+}
+
+.label-perfil{
+	font-weight : bold;
+}
+
+#error-pass, #error-email{
+	color : red;
+}
+
+.carousel .carousel-indicators {
+    bottom: -50px !important;
+}
+
+.carousel-indicators li[class="active"] {
+	background-color : #26a69a;
+}
+
+
+p.nombre{
+	font-weight : bold;
+}
+
+.copyright{
+	margin-top : 30px;
+	color : white;
+	
+}
+
+.footer{
+	/*background-color : #3c8dbc;*/
+	background-color: #00796b;
+	margin-top: 40px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.user-header{
+	background-color : #3c8dbc;
+}
+
+ #draggable { width: 150px; height: 150px; padding: 0.5em; float : right;}
+ 
+ @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+.activity-feed {
+  padding: 15px;
+}
+.activity-feed .feed-item {
+  position: relative;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  border-left: 2px solid #e4e8eb;
+}
+.activity-feed .feed-item:last-child {
+  border-color: transparent;
+}
+.activity-feed .feed-item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 6px;
+  background: #fff;
+  border: 1px solid #f37167;
+}
+.activity-feed .feed-item .date {
+  position: relative;
+  top: -5px;
+  color: #8c96a3;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.activity-feed .feed-item .text {
+  position: relative;
+  top: -3px;
+}
+

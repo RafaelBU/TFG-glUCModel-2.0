@@ -1,0 +1,257 @@
+/* Constantes */
+/* --------------------------------------------- */
+@blue-light: #BBDEFB; /*100*/
+@blue-medium: #2196F3; /*500*/
+@blue-strong: #1976D2; /*700*/
+@pink-light: #FF80AB; /*A100*/
+@pink-medium: #FF4081; /*A200*/
+@pink-strong: #F50057; /*A400*/
+@gray-light: #EEEEEE; /*200*/
+@gray-medium: #E0E0E0; /*300*/
+@gray-strong: #BDBDBD; /*400*/
+/* Tipografía */
+/* --------------------------------------------- */
+#glUCModel_header {
+  color: white;
+  /*background-image: url("img/grass.jpg");*/
+  background-color: @blue-strong;
+  padding: 10px;
+  margin-bottom: 0px;
+  padding: 20px;
+  font-weight: normal;
+}
+#titulo_seccion {
+  color: white;
+  /*background-image: url("img/grass.jpg");*/
+  background-color: @blue-light;
+  height: 40px;
+  padding: 5px;
+}
+/* Paneles de contenido */
+/* --------------------------------------------- */
+.panel-default {
+  border-radius: 2px;
+  background-color: white;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+}
+/*.panel-default {
+  border: 3px solid gray;
+  border-radius: 0px;
+  background-color: white;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+}*/
+.panel-default > .panel-heading {
+  border-radius: 2px;
+  background-color: @blue-medium;
+}
+.panel-default > .panel-footer {
+  //border-radius: 2px;
+  background-color: @gray-strong;
+}
+/*.panel-default > .panel-heading {
+  background-color: #388E3C;
+}
+.panel-default {
+  border-width: 4px;
+  border-color: grey;
+  border-radius: 8px;
+}*/
+.panel-formal {
+  border-radius: 0px;
+  border-width: 2px;
+  border-color: black;
+}
+.panel-formal > .panel-heading {
+  background-color: #959595;
+  height: 3em;
+  border-radius: 0px;
+}
+.panel-formal > .panel-body {
+  border-radius: 0px;
+}
+h3.panel-title {
+  color: white;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-color: black;
+  //background-image: url("../img/grass_lowres.png");
+  background-color: @gray-light;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+a {
+  color: white;
+}
+/* Posicionamiento */
+/* --------------------------------------------- */
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.v-align-middle {
+  vertical-align: middle;
+}
+.h-align-middle {
+  horizontal-align: middle;
+}
+.align-both {
+  vertical-align: middle;
+  horizontal-align: middle;
+}
+/* Listas y tablas listas con scroll */
+/* --------------------------------------------- */
+.scroll-list {
+  max-height: 16em;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.ul-coloured li:nth-child(2n+1) {
+  background-color: #E5E5E5;
+}
+/* Tabla de pacientes y recomendaciones */
+/* --------------------------------------------- */
+.tabla-pacientes {
+  //border-bottom: 1px solid @gray-light;
+  width: 100%;
+  padding: 30px;
+}
+.tabla-pacientes .rec-resumen {
+  border-bottom: 1px solid @gray-light;
+  height: 20px;
+  text-align: center;
+}
+.tabla-pacientes .rec-detalle {
+  border-bottom: 1px solid @gray-light;
+  //height: 20px;
+  text-align: justify;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.tabla-pacientes td {
+  margin: 10px;
+  padding: 8px;
+  height: 40px;
+  //text-align: center;
+  vertical-align: middle;
+  text-align: center;
+}
+.tabla-pacientes th {
+  font-weight: bold;
+  text-align: center;
+}
+.tabla-pacientes td .btn {
+  width: 30px;
+  height: 30px;
+}
+
+/* Tabal de recomendaciones a enviar */
+/* --------------------------------------------- */
+.tabla-rec-enviar {
+  width: 100%;
+  padding: 20px;
+}
+.tabla-rec-enviar th {
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+.tabla-rec-enviar td {
+  text-align: center;
+  border-top: 2px solid @gray-medium;
+}
+.tabla-rec-enviar .td-tipo {
+  width: 10%;
+  padding: 10px;
+}
+.tabla-rec-enviar .td-recomendacion {
+  width: 40%;
+  padding: 10px;
+}
+.tabla-rec-enviar .td-prioridad {
+  width: 15%;
+  padding: 10px;
+}
+.tabla-rec-enviar .td-auto {
+  width: 20%;
+  padding: 10px;
+}
+.tabla-rec-enviar .td-acciones {
+  width: 15%;
+  padding: 10px;
+}
+.tabla-rec-enviar td .detalle-rec {
+  text-align: justify;
+}
+.checkbox-auto { // Checkbox para automatizar
+
+}
+.tf-auto { //TextField periodo
+  //display: table-cell;
+  padding: 0;
+  width: 75%;
+  height: 100%;
+}
+
+/* Formularios */
+/* --------------------------------------------- */
+.tf-sm {
+  width: 3em;
+}
+/* Botones */
+/* --------------------------------------------- */
+.btn-submit-md {
+  background-color: #005200;
+  color: white;
+  border-radius: 0px;
+  height: 2em;
+  width: 5em;
+}
+.btn-ver-md {
+  background-color: #509050;
+  color: white;
+  border-radius: 0px;
+  border-width: 1px;
+  height: 2em;
+  /*width: 4em;*/
+}
+.btn-ver-md:hover {
+  background-color: white;
+  border-color: #509050;
+  border-width: 3px;
+  color: #509050;
+}
+.btn-light-sm {
+  background-color: #609960;
+  color: white;
+  border-radius: 0px;
+}
+.btn-light-sm:hover {
+  background-color: white;
+  border-color: #609960;
+  border-width: 3px;
+  color: #609960;
+}
+/*abbr.btn-expl { // Leyenda con el significado de un boton
+  text-decoration: none;
+  background-color: pink;
+}*/
+//<abbr title="Automatizar para este paciente"><span class="glyphicon glyphicon-repeat align-both"></span></abbr>
+/* Carousel */
+/* --------------------------------------------- */
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 80%;
+  margin: auto;
+}
+
+/* Accordion */
+.rec-resumen {
+
+}
+.rec-detalle {
+  
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14-may-2017 1:22:02 by Hibernate Tools 5.2.1.Final -->
+<hibernate-mapping>
+    <class name="beans.Mediciones" table="mediciones" catalog="glucmodel" optimistic-lock="version">
+        <id name="idMedicion" type="java.lang.Integer">
+            <column name="idMedicion" />
+            <generator class="identity" />
+        </id>
+        <property name="idPaciente" type="int">
+            <column name="idPaciente" not-null="true" />
+        </property>
+        <property name="fechaMedicion" type="date">
+            <column name="fechaMedicion" length="10" not-null="true" />
+        </property>
+        <property name="adehiper" type="java.lang.Double">
+            <column name="ADEHiper" precision="22" scale="0" />
+        </property>
+        <property name="adehipo" type="java.lang.Double">
+            <column name="ADEHipo" precision="22" scale="0" />
+        </property>
+        <property name="ddhiper" type="java.lang.Double">
+            <column name="DDHiper" precision="22" scale="0" />
+        </property>
+        <property name="ddhipo" type="java.lang.Double">
+            <column name="DDHipo" precision="22" scale="0" />
+        </property>
+        <property name="mmhiper" type="java.lang.Double">
+            <column name="MMHiper" precision="22" scale="0" />
+        </property>
+        <property name="mmhipo" type="java.lang.Double">
+            <column name="MMHipo" precision="22" scale="0" />
+        </property>
+        <property name="dcohiper" type="java.lang.Double">
+            <column name="DCOHiper" precision="22" scale="0" />
+        </property>
+        <property name="dcohipo" type="java.lang.Double">
+            <column name="DCOHipo" precision="22" scale="0" />
+        </property>
+        <property name="mhiper" type="java.lang.Double">
+            <column name="MHiper" precision="22" scale="0" />
+        </property>
+        <property name="mhipo" type="java.lang.Double">
+            <column name="MHipo" precision="22" scale="0" />
+        </property>
+        <property name="dcehiper" type="java.lang.Double">
+            <column name="DCEHiper" precision="22" scale="0" />
+        </property>
+        <property name="dcehipo" type="java.lang.Double">
+            <column name="DCEHipo" precision="22" scale="0" />
+        </property>
+        <property name="adohiper" type="java.lang.Double">
+            <column name="ADOHiper" precision="22" scale="0" />
+        </property>
+        <property name="adohipo" type="java.lang.Double">
+            <column name="ADOHipo" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

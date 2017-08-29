@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14-may-2017 1:22:02 by Hibernate Tools 5.2.1.Final -->
+<hibernate-mapping>
+    <class name="beans.Documentaciones" table="documentaciones" catalog="glucmodel" optimistic-lock="version">
+        <id name="clave" type="java.lang.Long">
+            <column name="CLAVE" />
+            <generator class="identity" />
+        </id>
+        <property name="date" type="timestamp">
+            <column name="DATE" length="19" />
+        </property>
+        <property name="fichero" type="binary">
+            <column name="FICHERO" />
+        </property>
+        <property name="filename" type="string">
+            <column name="FILENAME" />
+        </property>
+        <property name="filesize" type="java.lang.Long">
+            <column name="FILESIZE" />
+        </property>
+        <property name="iduser" type="java.lang.Long">
+            <column name="IDUSER" />
+        </property>
+        <property name="tipodestino" type="java.lang.Long">
+            <column name="TIPODESTINO" />
+        </property>
+        <property name="description" type="string">
+            <column name="DESCRIPTION" />
+        </property>
+        <property name="filetype" type="string">
+            <column name="FILETYPE" length="64" />
+        </property>
+    </class>
+</hibernate-mapping>
